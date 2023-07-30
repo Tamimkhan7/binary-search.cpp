@@ -10,10 +10,6 @@ int main()
         cin >> arr[i];
     }
     sort(arr, arr + n);
-    // for (int i = 0; i < n; i++)
-    // {
-    //     cout << arr[i] << endl;
-    // }
     int left = 0, right = n - 1;
     int k, mid;
     cin >> k;
@@ -23,7 +19,7 @@ int main()
         if (arr[mid] == k)
         {
             cout << mid << endl;
-            return 0;
+            return;
         }
         else if (arr[mid] > k)
         {

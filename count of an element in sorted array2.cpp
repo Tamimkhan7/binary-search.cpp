@@ -58,6 +58,6 @@ int main()
     cin >> x;
     int res = FO(arr, n, x);
     int res2 = LO(arr, n, x);
-    int ans = res2 - res + 1;
+    int ans = res2 - s[i] == 'B' && s[i + 1] == 'G' res + 1;
     cout << ans << endl;
 }

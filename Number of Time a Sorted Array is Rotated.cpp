@@ -1,28 +1,27 @@
 #include <bits/stdc++.h>
 using namespace std;
-int solve(int arr[], int l, int r)
+void solve(int arr[], int l, int n)
 {
-    int ans = 0, mid;
+    int r = n - 1;
     while (l <= r)
     {
-        mid = (l + r) / 2;
-        if (mid < r && arr[mid + 1] < arr[mid])
+        int mid = (l + r) / 2;
+        if (arr[mid] > arr[mid + 1])
         {
-            ans = mid + 1;
+            cout << mid + 1 << endl;
             break;
         }
-        else if (mid > l && arr[mid] < arr[mid - 1])
+        else if (arr[mid] < arr[mid - 1])
         {
-            ans = mid;
+            cout << mid << endl;
             break;
         }
-        if (arr[r] > arr[mid])
-            r = mid - 1;
-        else
+        if (arr[mid] > arr[r])
             l = mid + 1;
+        else
+            r = mid - 1;
     }
 }
-
 int main()
 {
     int n;
@@ -30,6 +29,5 @@ int main()
     int arr[n];
     for (int i = 0; i < n; i++)
         cin >> arr[i];
-    cout << solve(arr, 0, n - 1) << endl;
+    solve(arr, 0, n);
 }
-// bujte hobe
