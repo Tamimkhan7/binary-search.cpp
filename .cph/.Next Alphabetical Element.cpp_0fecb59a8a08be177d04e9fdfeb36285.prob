@@ -1,0 +1,1 @@
+{"name":"Local: Next Alphabetical Element","url":"c:\\Users\\HP\\OneDrive\\Desktop\\binary search.cpp\\Next Alphabetical Element.cpp","tests":[{"id":1690909190284,"input":"abcdefgh\nf","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\HP\\OneDrive\\Desktop\\binary search.cpp\\Next Alphabetical Element.cpp","group":"local","local":true}
